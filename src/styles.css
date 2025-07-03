@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+:root {
+	--shadow-color: 256deg 6% 21%;
+	--shadow-elevation-low: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+		0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
+		1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
+	--shadow-elevation-medium: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+		0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+		2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+		5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+
+    --bg-color: #fff1ca;
+    --emphasis-color: #e67514;
+    --secondary-color: #06923e;
+    --normal-font-color: #000;
+
+    --title-font: "DM Serif Display", serif;
+    --body-font: "Comfortaa", sans-serif;;
+}
+
+body {
+	background-color: var(--bg-color);
+    font-family: var(--body-font);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.3rem;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 5px;
+    width: 6rem;
+    font-size: 1rem;
+    padding: 0.7rem 0;
+    font-weight: 800;
+    box-shadow: var(--shadow-elevation-low);
+}
+
+button:hover {
+    font-size: 1.05rem;
+}
+
+button:active {
+    box-shadow: var(--shadow-elevation-medium);
+}
+
+.full-content-middle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#title-img {
+	width: max(450px, 50%);
+	filter: drop-shadow(15px 30px 0px #e67514);
+	z-index: 0;
+    margin-top: min(-150px ,-12vw);
+    margin-bottom: -1.5rem;
+}
+
+.title-text {
+	color: var(--emphasis-color);
+    filter: drop-shadow(15px 20px 0px #ffffff);
+    font-size: 5rem;
+    font-family: var(--title-font);
+}
+
+.subtitle {
+	color: var(--normal-font-color);
+    z-index: 1;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.underline {
+    text-decoration: var(--secondary-color) underline;
+    text-decoration-thickness: 3px;
+}

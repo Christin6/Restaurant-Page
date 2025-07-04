@@ -21,6 +21,10 @@
     --body-font: "Roboto", sans-serif;;
 }
 
+html {
+    padding: 0;
+}
+
 body {
 	background-color: var(--bg-color);
     font-family: var(--body-font);
@@ -82,7 +86,7 @@ h1, h2 {
 .review-card-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    column-gap: 2rem;
+    gap: 2rem;
     width: 90%;
     margin: 1rem 0;
 }
@@ -133,7 +137,7 @@ h1, h2 {
 footer {
     text-align: center;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 0;
     margin-top: 5rem;
     color: var(--bg-color);
 }

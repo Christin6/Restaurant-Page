@@ -45,6 +45,14 @@ nav {
 	height: 40px;
 }
 
+nav button:focus {
+    background-color: var(--emphasis-color);
+}
+
+nav button:focus::after {
+    content: "🍜";
+}
+
 section {
     margin-bottom: 2rem;
 }
